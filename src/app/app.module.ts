@@ -16,7 +16,8 @@ import { NavBarComponent } from './nav/navbar.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
