@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { CreateEventComponent } from './events/create-event.component';
 import { NotFoundComponent } from './errors/notFound.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateSessionComponent } from './events/event-details/create-session.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,13 @@ import { NotFoundComponent } from './errors/notFound.component';
     EventDetailsComponent,
     NavBarComponent,
     CreateEventComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CreateSessionComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
